@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ILoveDogs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#catalog">Каталог</a></li>
+                <li><a href="#game">Игра</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="home">
+        <h1>Веб-приложение, основанное на собаках!</h1>
+        <p>Место для изучения и изучения различных пород собак.</p>
+    </main>
+
+    <section id="catalog">
+        <h2>Каталог собак</h2>
+        <input type="text" id="searchInput" placeholder="Поиск по породе..." onkeyup="searchDogs()">
+        <div id="dogList" class="dog-list">
+
+        </div>
+    </section>
+
+    <section id="game">
+        <h2>Угадай породу!</h2>
+        <div>
+            <img id="guessImage" src="" alt="Угадай породу" style="width: 300px; height: 300px;">
+        </div>
+        <div>
+            <input type="text" id="guessInput" placeholder="Напиши породу здесь...">
+            <button onclick="checkAnswer()">Проверить</button>
+        </div>
+        <p id="result"></p>
+    </section>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
